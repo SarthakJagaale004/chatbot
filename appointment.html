@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="appstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule an Appointment with Your Doctor</h1>
+        <form action="/book" method="post" id="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="">Select a time</option>
+                <option value="9:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="1:00">1:00 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="3:00">3:00 PM</option>
+            </select><br>
+            <label for="doctor">Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select a doctor</option>
+                <option value="Dr.Aniket">Dr. Aniket</option>
+                <option value="Dr.Omkar">Dr. Omkar</option>
+                <option value="Dr.Shubham">Dr. Shubham</option>
+            </select>
+            <button type="submit">Schedule Appointment</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="appscript.js"></script>
+</body>
+</html>

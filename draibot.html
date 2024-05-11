@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tridosha Chatbot</title>
+   <style> body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .chat-container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        padding: 20px;
+    }
+    .messages {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 300px;
+        overflow-y: auto;
+    }
+    .message {
+        margin-bottom: 10px;
+    }
+    .sender {
+        font-weight: bold;
+    }
+    .chat-input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .send-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="chat-container">
+        <ul class="messages" id="messagesList"></ul>
+        <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+        <button class="send-button" id="sendButton" onclick="sendMessage()">Send</button>
+            
+    </div>
+    <!-- translate english to hindi -->
+    
+        <script src="drscript.js"></script>
+</body>
+</html>
